@@ -18,3 +18,4 @@ edition = "2018"
 [package.metadata.scripts]
 build = "rm -rf docs && cargo doc && mv target/doc/ docs/ && cargo build"
 publish = "cargo exec build && cargo test && cargo publish --allow-dirty"
+example = "cargo run --example main"

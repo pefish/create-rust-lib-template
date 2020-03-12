@@ -21,3 +21,10 @@ cargo exec build
 ```
 cargo exec publish
 ```
+
+## Run example
+
+```
+cargo exec example
+```
+
