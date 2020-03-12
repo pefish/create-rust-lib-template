@@ -1,0 +1,20 @@
+[package]
+name = "create-rust-lib-template"
+version = "0.1.0"
+authors = ["pefish <pefish@qq.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/pefish/create-rust-lib-template"
+documentation = "https://github.com/pefish/create-rust-lib-template"
+homepage = "https://github.com/pefish/create-rust-lib-template"
+description = "_description_"
+exclude = ["docs", "/.travis.yml", "/appveyor.yml", ".gitignore"]
+autobenches = true
+edition = "2018"
+
+
+[dependencies]
+
+[package.metadata.scripts]
+build = "rm -rf docs && cargo doc && mv target/doc/ docs/ && cargo build"
+publish = "cargo exec build && cargo test && cargo publish --allow-dirty"
