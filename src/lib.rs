@@ -5,3 +5,7 @@ mod tests {
         assert_eq!(2 + 2, 4);
     }
 }
+
+pub fn hello () -> String {
+    return String::from("hello");
+}
