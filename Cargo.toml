@@ -12,10 +12,5 @@ exclude = ["docs", "/.travis.yml", "/appveyor.yml", ".gitignore"]
 autobenches = true
 edition = "2018"
 
-
 [dependencies]
-
-[package.metadata.scripts]
-build = "rm -rf docs && cargo doc && mv target/doc/ docs/ && cargo build"
-publish = "cargo exec build && cargo test && cargo publish --allow-dirty"
-example = "cargo run --example main"
+tokio = { version = "1.17.0", features = ["full"] }
