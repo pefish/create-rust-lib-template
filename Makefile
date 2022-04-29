@@ -3,13 +3,13 @@
 DEFAULT: build-release
 
 build-release:
-	cargo +nightly build --release
+	cargo build --release
 
 build:
-	cargo +nightly build
+	cargo build
 
 publish:
-	cargo +nightly publish
+	cargo publish --allow-dirty
 
 test:
-	cargo +nightly test
+	cargo test
