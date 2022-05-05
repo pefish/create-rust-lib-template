@@ -14,3 +14,10 @@ edition = "2018"
 
 [dependencies]
 tokio = { version = "1.17.0", features = ["full"] }
+anyhow = "1.0.56"
+
+[[example]]
+name = "test"
+path = "examples/test.rs"
+
+
