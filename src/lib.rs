@@ -1,6 +1,5 @@
 
-mod test;
+pub mod module;
+mod module_test;
 
-pub async fn hello () -> String {
-    return String::from("hello");
-}
+
