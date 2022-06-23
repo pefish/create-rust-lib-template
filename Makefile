@@ -12,4 +12,4 @@ publish:
 	cargo publish --allow-dirty
 
 test:
-	cargo test -- --exact --nocapture
+	RUST_LOG=debug RUST_BACKTRACE=1 cargo test -- --exact --nocapture
