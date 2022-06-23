@@ -12,4 +12,4 @@ publish:
 	cargo publish --allow-dirty
 
 test:
-	cargo test
+	cargo test -- --exact --nocapture
